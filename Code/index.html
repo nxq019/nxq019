@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCOF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base-system.css">
+    <link rel="stylesheet" href="./assets/css/Gird-system2.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css ">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/container.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- HEADER -->
+        <div class="header" id="header">
+            <!-- header-navbar -->
+           <div class="grid wide">
+                <div class="row header__navbar ">
+                <ul class="header__navbar-list">
+                    <li class="header__nav-item header__nav--home-page">
+                        <a href="#header">Trang chủ NCOF  </a>
+                    </li>
+                    <li class="header__nav-item header__nav-item--separate header__nav-item--has-qr">
+                        <a class="#" href="#">Tải ứng dụng</a>
+                        <div class="header__qr">
+                            <img class="header__qr-img" src="./assets/img/QR-code.PNG" alt="ỨNG DỤNG NCOF">
+                            <div class="header__qr-app">
+                                <a href="#" class="header__qr-link">
+                                    <img class="header__qr-img--dowload-win" src="./assets/img/google_play.png" alt="">
+                                </a>
+                                <a href="#" class="header__qr-link">
+                                    <img class="header__qr-img--dowload-ios" src="./assets/img/app_store.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__nav-item header__nav-item--separate header__nav--contact">
+                        <a href="#footer">Kết nối</a>
+                        <a class="header__nav-icon" href="https://www.facebook.com/profile.php?id=100035412519965"><i class="i--left fa-brands fa-facebook"></i></a>
+                        <a class="header__nav-icon" href="https://www.instagram.com/nxq019/"><i class="i--right fa-brands fa-instagram-square"></i></a>
+                    </li>
+                </ul>
+                <ul class="header__navbar-list">
+                    <li class="header__nav-item  header__nav-item--has-list">
+                        <i class="i--right fa-solid fa-align-left"></i>
+                        <a href="#">Danh sách</a>
+                        <div class="header__collection">
+                            <header class="header__collection-header">
+                                <h3>Danh sách thực phẩm đã chọn</h3>
+                            </header>
+                            <ul class="header__collection-list">
+                                
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__nav-item header__mobile-setting ">
+                        <i class="header__mobile-setting--icon fa-solid fa-gear"></i>
+                        <div class="header__mobile-setting--list">
+                            <a href="">Đăng nhập</a>
+                            <a href="">Đăng ký</a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item header__nav-item--separate header__nav--support">
+                        <a class="header__nav-icon" href=""><i class="i--right fa-solid fa-circle-question"></i></a>
+                        <a href="#footer">Hỗ trợ</a>
+                    </li> 
+                    </li>
+                    <li class="header__nav-item header__nav-item--separate header__nav-item--register">
+                        <a href="#">Đăng ký</a>
+                    </li>    
+                    <li class="header__nav-item header__nav-item--separate header__nav-item--login">
+                        <a href="#">Đăng nhập</a>
+                    </li>  
+                </ul>
+                </div>
+           </div>
+           <!-- header-search -->
+           <div class="grid wide">
+                <div class="header__content">
+                    <div class="header__logo">
+                        <a class="header__logo-home" href="#header">
+                            <i class="header__logo-icon--logo fa-solid fa-egg"></i></fa-solid>
+                            <span >NCOF</span>
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-tool">
+                            <input class="header__search-input" placeholder="Tìm kiếm..." type="text">
+                            <div class="header__search-history">
+                                <div class="header__search-history-name">
+                                    <a href="#" class="header__search-history-item">Gạo lứt</a>
+                                    <button class="header__search-history-device">Xóa</button>
+                                </div>
+                                <div class="header__search-history-name">
+                                    <a href="#" class="header__search-history-item">Sầu riêng</a>
+                                    <button class="header__search-history-device">Xóa</button>
+                                </div>
+                                <div class="header__search-history-name">
+                                    <a href="#" class="header__search-history-item">Ức gà</a>
+                                    <button class="header__search-history-device">Xóa</button>
+                                </div>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <div class="header__favorite">
+                            <i class="header__logo-icon--favorite fa-solid fa-star"></i>
+                            <div class="header__favorite-list">
+                                <div class="header__favorite-item">
+                                    <img class="header__favorite-img" src="./assets/img/food/protein/thuysan/tom.jpg" alt="">
+                                    <div class="header__favorite-name">Tôm</div>
+                                    <i class="fa-solid fa-trash header__favorite-trash"></i>
+                                </div>
+                                <div class="header__favorite-item">
+                                    <img class="header__favorite-img" src="./assets/img/food/chatbeo/dauhuongduong.jpg" alt="">
+                                    <div class="header__favorite-name">Dầu hướng dương</div>
+                                    <i class="fa-solid fa-trash header__favorite-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <!-- Home -->
+            <div class="home">
+                <a href="#header" class="home__comeback">
+                    <i class="home__comeback-icon fa-solid fa-house-chimney"></i>
+                </a>
+            </div>
+            <div class="subnav">
+                <a href="#container" class="container__comeback">
+                    <i class="container__comeback-icon fa-solid fa-bars-staggered"></i>
+                </a>
+            </div>
+        </div>
+        <!-- image -->
+        <div class="image" id="image">
+            <div class="grid cover-image">
+                <img class="cover-image-img" src="./assets/img/anhbia.jpg" alt="">
+            </div>
+        </div>
+        <!-- CONTAINER -->
+        <div class="container" id="container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2 m-3 c-0 container__calculate">
+                        <span class="container__calculate-title">Bảng Tính Năng Lượng</span>
+                        <table>
+                            <thead>
+                                <th>Thành Phần</th>
+                                <th>Giá trị (g)</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Protein</td>
+                                    <td>150</td>
+                                </tr>
+                                <tr>
+                                    <td>Tinh bột</td>
+                                    <td>150</td>
+                                </tr>
+                                <tr>
+                                    <td>Chất béo</td>
+                                    <td>13</td>
+                                </tr>
+                                <tr>
+                                    <td>Tổng cộng (kcal)</td>
+                                    <td>2000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="container__calculate-list">  
+                            Vitamin:
+                            <li class="container__calculate-item">Vitamin A</li>
+                            <li class="container__calculate-item">Vitamin B</li>
+                        </ul>
+                        <ul class="container__calculate-list">  
+                            Chất khoáng:	
+                            <li class="container__calculate-item">Sắt</li>
+                            <li class="container__calculate-item">Kẽm</li>
+                        </ul>
+                    </div>
+                    <div class="col l-10 m-9 c-12 container__body">
+                        <!-- navbar -->
+                        <div class="row ">
+                            <div class="col l-2-4 m-4 c-6 container__body-navbar">
+                                <i class="fa-solid fa-angle-down"></i>Protein
+                                <div class="container__body-type--list">
+                                    <a href="#protein-meat" class="container__body-type">Thịt</a>
+                                    <a href="#protein-seafood" class="container__body-type">Hải Sản</a>
+                                    <a href="#protein-other-protein" class="container__body-type">Nguồn khác</a>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-navbar">
+                                <i class="fa-solid fa-angle-down"></i>Tinh bột
+                                <div class="container__body-type--list">
+                                    <a href="#carbohydrate-crops" class="container__body-type">Cây lương thực</a>
+                                    <a href="#carbohydrate-product" class="container__body-type">Các loại bánh</a>
+                                    <a href="#carbohydrate-pea" class="container__body-type">Các loại đậu</a>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-navbar">
+                                <i class="fa-solid fa-angle-down"></i>Chất béo
+                                <div class="container__body-type--list">
+                                    <a href="#vegetable-oil" class="container__body-type">Dầu thực vật</a>
+                                    <a href="#animal-fat" class="container__body-type">Mỡ động vật</a>
+                                    <a href="#other-fat" class="container__body-type">Các loại hạt</a>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-navbar">
+                                <i class="fa-solid fa-angle-down"></i>Vitamin
+                                <div class="container__body-type--list">
+                                    <a href="#fruit" class="container__body-type">Trái cây</a>
+                                    <a href="#vegetable" class="container__body-type">Rau xanh</a>
+                                    <a href="#other-fat" class="container__body-type">Các loại hạt</a>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-navbar">
+                                <i class="fa-solid fa-angle-down"></i>Chất khoáng
+                                <div class="container__body-type--list">
+                                    <a href="#protein-seafood" class="container__body-type">Hải sản</a>
+                                    <a href="#vegetable" class="container__body-type">Rau xanh</a>
+                                    <a href="#" class="container__body-type">Trái cây</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- meat -->
+                        <div class="row" id="protein-meat">
+                            
+                        </div>
+                        <!-- seefood -->
+                        <div class="row" id="protein-seafood">
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/bachtuoc.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Bạch tuộc<input type="radio"><span></span></li>
+                                        <li>Protein: 30g </li>
+                                        <li>Sắt, Magie, Canxi</li>
+                                        <li>Năng lượng: 164 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/baongu.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Bào ngư<input type="radio"><span></span></li>
+                                        <li>Protein: 17.5g </li>
+                                        <li>Sắt, Selen, Magie</li>
+                                        <li>Năng lượng: 161 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/cahoi.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cá hồi<input type="radio"><span></span></li>
+                                        <li>Protein: 20g </li>
+                                        <li>Omega-3, Kali, Magie</li>
+                                        <li>Năng lượng: 208 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/tom.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Tôm<input type="radio"><span></span></li>
+                                        <li>Protein: 24g </li>
+                                        <li>Sắt, Kali, Canxi</li>
+                                        <li>Năng lượng: 99 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/tomtit.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Tôm tít<input type="radio"><span></span></li>
+                                        <li>Protein: 27g </li>
+                                        <li>Sắt, Omega-3, Omega-6</li>
+                                        <li>Năng lượng: 270 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/cangu.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cá ngừ<input type="radio"><span></span></li>
+                                        <li>Protein: 29g </li>
+                                        <li>Magie, Kali, Natri</li>
+                                        <li>Năng lượng: 129 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/ruoc.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Ruốc<input type="radio"><span></span></li>
+                                        <li>Protein: 16g </li>
+                                        <li>Sắt, Canxi, Kalo</li>
+                                        <li>Năng lượng: 110 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/muc.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Mực<input type="radio"><span></span></li>
+                                        <li>Protein: 18g </li>
+                                        <li>Natri, Kali, Canxi</li>
+                                        <li>Năng lượng: 174 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/cua.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cua<input type="radio"><span></span></li>
+                                        <li>Protein: 19g </li>
+                                        <li>Magie, Kali, Canxi</li>
+                                        <li>Năng lượng: 197 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/catrich.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cá trích<input type="radio"><span></span></li>
+                                        <li>Protein: 23g </li>
+                                        <li>Natri, Kali, Canxi</li>
+                                        <li>Năng lượng: 202 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/carophi.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cá rô phi<input type="radio"><span></span></li>
+                                        <li>Protein: 26g </li>
+                                        <li>Magie, Kali, Natri</li>
+                                        <li>Năng lượng: 128 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/caphen.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cá phèn<input type="radio"><span></span></li>
+                                        <li>Protein: 16.9g </li>
+                                        <li>Magie, Omega-3, Canxi</li>
+                                        <li>Năng lượng: 104 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/canuc.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cá nục<input type="radio"><span></span></li>
+                                        <li>Protein: 20.2g </li>
+                                        <li>Photpho, Canxi</li>
+                                        <li>Năng lượng: 111 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/caho.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cá hố<input type="radio"><span></span></li>
+                                        <li>Protein: 18g </li>
+                                        <li>Omega-3, Kali</li>
+                                        <li>Năng lượng: 82 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/cacom.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cá cơm<input type="radio"><span></span></li>
+                                        <li>Protein: 29g </li>
+                                        <li>Omega-3, Kali, Canxi</li>
+                                        <li>Năng lượng: 201 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/thuysan/cachim.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cá chim<input type="radio"><span></span></li>
+                                        <li>Protein: 19.4g </li>
+                                        <li>Photpho, Canxi, Kali</li>
+                                        <li>Năng lượng: 126 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- protein khác -->
+                        <div class="row" id="protein-other-protein">
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/khac/trung.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Trứng<input type="radio"><span></span></li>
+                                        <li>Protein: 13g </li>
+                                        <li>Chất béo: 11g</li>
+                                        <li>Năng lượng: 155 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/khac/daukhuon.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Đậu khuôn<input type="radio"><span></span></li>
+                                        <li>Protein: 8.1g </li>
+                                        <li>Chất béo: 4.8g</li>
+                                        <li>Năng lượng: 318 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/khac/phomai.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Phô mai<input type="radio"><span></span></li>
+                                        <li>Protein: 25g </li>
+                                        <li>Chất béo: 33g</li>
+                                        <li>Năng lượng: 402 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/khac/whey.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Whey protein<input type="radio"><span></span></li>
+                                        <li>Protein: 26g </li>
+                                        <li>Chất béo: 0.4g</li>
+                                        <li>Năng lượng: 30 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/protein/khac/xucxic.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Xúc xích<input type="radio"><span></span></li>
+                                        <li>Protein: 12g </li>
+                                        <li>Chất béo: 27g</li>
+                                        <li>Năng lượng: 300 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- carbohydrat-crops -->
+                        <div class="row" id="carbohydrate-crops">
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/tinhbot/bingo.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Bí ngô<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 7g </li>
+                                        <li>Vitamin: K, E, C</li>
+                                        <li>Năng lượng: 26 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/tinhbot/gaoluc.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Gạo lức<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 23g </li>
+                                        <li>Vitamin: K, E, B1, B9</li>
+                                        <li>Năng lượng: 110 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/tinhbot/gaotrang.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Gạo trắng<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 28g </li>
+                                        <li>Vitamin: B6</li>
+                                        <li>Năng lượng: 130 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/tinhbot/khoailang.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Khoai lang<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 20g </li>
+                                        <li>Vitamin: A, B2, C</li>
+                                        <li>Năng lượng: 85 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/tinhbot/khoaitay.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Khoai tây<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 17g </li>
+                                        <li>Vitamin: B6, C</li>
+                                        <li>Năng lượng: 76 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/tinhbot/khoaiso.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Khoai sọ<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 26.5g </li>
+                                        <li>Vitamin: B, E, C</li>
+                                        <li>Năng lượng: 114 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/tinhbot/nep.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Nếp<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 21g </li>
+                                        <li>Vitamin: B1, B2, PP</li>
+                                        <li>Năng lượng: 97 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/tinhbot/ngo.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Ngô<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 41g </li>
+                                        <li>Vitamin: B1, C</li>
+                                        <li>Năng lượng: 177 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/tinhbot/san.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Sắn<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 38g </li>
+                                        <li>Vitamin: A, B6, C</li>
+                                        <li>Năng lượng: 119 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carbohydrat-product -->
+                        <div class="row" id="carbohydrate-product">
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/tinhbot/botmy.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Bột mỳ<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 76g </li>
+                                        <li>Chất xơ: 7g</li>
+                                        <li>Năng lượng: 364 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/tinhbot/bun.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Bún sợi<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 82g </li>
+                                        <li>Chất xơ: 3.9g</li>
+                                        <li>Năng lượng: 330 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/tinhbot/myquang.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Mỳ quảng<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 31.7g </li>
+                                        <li>Chất xơ: 2g</li>
+                                        <li>Năng lượng: 143 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/tinhbot/images.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Ngũ cốc<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 68g </li>
+                                        <li>Chất xơ: 10g</li>
+                                        <li>Năng lượng: 379 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- carbohydrat-pea -->
+                        <div class="row" id="carbohydrate-pea">
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/dau/dauden.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Đậu đen<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 20.39g </li>
+                                        <li>Protein: 9g</li>
+                                        <li>Sắt, Magie, Photpho</li>
+                                        <li>Năng lượng: 140 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/dau/daudo.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Đậu đỏ<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 37g </li>
+                                        <li>Protein: 8.6g</li>
+                                        <li>Mangan, Kali, Photpho</li>
+                                        <li>Năng lượng: 148 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/dau/dauhalan.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Đậu hà lan<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 30g </li>
+                                        <li>Protein: 10.2g</li>
+                                        <li>Sắt, Canxi, Photpho</li>
+                                        <li>Năng lượng: 143 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/dau/daulang.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Đậu lăng<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 20g </li>
+                                        <li>Protein: 9g</li>
+                                        <li>Sắt, Canxi, Magie</li>
+                                        <li>Năng lượng: 130 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/dau/daunanh.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Đậu nành<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 9.9g </li>
+                                        <li>Protein: 16.6g</li>
+                                        <li>Sắt, Canxi, Magie</li>
+                                        <li>Năng lượng: 173 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/dau/dauphong.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Đậu phộng<input type="radio"><span></span></li>
+                                        <li>Tinh bột: 6g </li>
+                                        <li>Protein: 9g</li>
+                                        <li>Chất béo: 18gram</li>
+                                        <li>Năng lượng: 207 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/dau/dauxanh.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Đậu xanh<input type="radio"><span></span></li>
+                                        <li>Tinh bột:53.1g </li>
+                                        <li>Protein: 23.4g</li>
+                                        <li>Sắt, Canxi, Kali</li>
+                                        <li>Năng lượng: 328 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- vegetable oil -->
+                        <div class="row" id="vegetable-oil">
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/chatbeo/dauoliu.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Dầu oliu<input type="radio"><span></span></li>
+                                        <li>Vitamin: Omega, E, K</li>
+                                        <li>Năng lượng: 884 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/chatbeo/daubo.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Dầu bơ<input type="radio"><span></span></li>
+                                        <li>Vitamin: B, C, E, K</li>
+                                        <li>Năng lượng: 884 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/chatbeo/daucai.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Dầu đậu nành<input type="radio"><span></span></li>
+                                        <li>Vitamin: Omega, E, K</li>
+                                        <li>Năng lượng: 884 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/chatbeo/daudongphong.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Dầu đậu phộng<input type="radio"><span></span></li>
+                                        <li>Vitamin: E, K</li>
+                                        <li>Năng lượng: 884 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/chatbeo/dauhuongduong.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Dầu hướng dương<input type="radio"><span></span></li>
+                                        <li>Vitamin: E</li> 
+                                        <li>Năng lượng: 884 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/chatbeo/daume.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Dầu mè<input type="radio"><span></span></li>
+                                        <li>Vitamin: B, E, omega</li>
+                                        <li>Năng lượng: 884 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- animal fat -->
+                        <div class="row" id="animal-fat">
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/chatbeo/moca.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Mỡ cá<input type="radio"><span></span></li>
+                                        <li>Vitamin: Omega, A, D, E, K</li>
+                                        <li>Năng lượng: 782 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/chatbeo/molon.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Mỡ heo<input type="radio"><span></span></li>
+                                        <li>Vitamin: A, D, B</li>
+                                        <li>Năng lượng: 897 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- other-fat -->
+                        <div class="row" id="other-fat">
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/hat/hatbido.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Hạt bí đỏ<input type="radio"><span></span></li>
+                                        <li>Protein: 19g</li>
+                                        <li>Vitamin: Omega, C</li>
+                                        <li>Năng lượng: 446 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/hat/hanhnhan.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Hạnh nhân<input type="radio"><span></span></li>
+                                        <li>Protein: 18g</li>
+                                        <li>Vitamin: E, B2</li>
+                                        <li>Năng lượng: 400 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/hat/occho.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Hạt óc chó<input type="radio"><span></span></li>
+                                        <li>Protein: 15g</li>
+                                        <li>Vitamin: A, B6, C</li>
+                                        <li>Năng lượng: 654 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/hat/hatdieu.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Hạt điều<input type="radio"><span></span></li>
+                                        <li>Protein: 18g</li>
+                                        <li>Vitamin: E, K, B6, C</li>
+                                        <li>Năng lượng: 553 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/hat/macca.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Hạt macca<input type="radio"><span></span></li>
+                                        <li>Protein: 8g</li>
+                                        <li>Vitamin: C, B1, Omega</li>
+                                        <li>Năng lượng: 718 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/hat/hachia.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Hạt chia<input type="radio"><span></span></li>
+                                        <li>Protein: 17g</li>
+                                        <li>Vitamin: C, Omega</li>
+                                        <li>Năng lượng: 486 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/hat/hatmit.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Hạt mít<input type="radio"><span></span></li>
+                                        <li>Protein: 2g</li>
+                                        <li>Vitamin: B</li>
+                                        <li>Năng lượng: 200 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fruit -->
+                        <div class="row" id="fruit">
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/bo.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Bơ<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B, omega</li>
+                                        <li>Magie, Sắt, Canxi</li>
+                                        <li>Năng lượng: 160 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/buoi.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Bưởi<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B, A</li>
+                                        <li>Magie, Sắt, Canxi</li>
+                                        <li>Năng lượng: 42 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/cam.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cam<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B, omega</li>
+                                        <li>Magie, Sắt, Kali</li>
+                                        <li>Năng lượng: 47 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/chanhday.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Chanh dây<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B, A</li>
+                                        <li>Magie, Canxi, Kali</li>
+                                        <li>Năng lượng: 97 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/cherry.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cherry<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, A</li>
+                                        <li>Magie, Canxi, Kali</li>
+                                        <li>Năng lượng: 50 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/chomchom.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Chôm chôm<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B6</li>
+                                        <li>Mangan, Sắt, Kẽm</li>
+                                        <li>Năng lượng: 58 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/chuoi.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Chuối<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, A, B6, K</li>
+                                        <li>Magie, Sắt, Kali</li>
+                                        <li>Năng lượng: 88 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/coc.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cóc<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, A</li>
+                                        <li>Natri, Photpho, Kali</li>
+                                        <li>Năng lượng: 48 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/dao.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Đào<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, A, E, B</li>
+                                        <li>Magie, Canxi, Kali</li>
+                                        <li>Năng lượng: 52 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/dautay.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Dâu tây<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, A, B6, K, E</li>
+                                        <li>Mangan, Sắt, Canxi</li>
+                                        <li>Năng lượng: 32 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/dua.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Dừa<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B</li>
+                                        <li>Sắt, Canxi, Kali</li>
+                                        <li>Năng lượng: 354 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/duahau.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Dưa hấu<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, A</li>
+                                        <li>Magie, Canxi, Kali</li>
+                                        <li>Năng lượng: 46 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/dudu.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Đu đủ<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B1, B2</li>
+                                        <li>Kẽm, Sắ, Kali</li>
+                                        <li>Năng lượng: 59 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/khom.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Khóm<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, A, B6</li>
+                                        <li>Photpho, Canxi, Kali</li>
+                                        <li>Năng lượng: 50 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/kiwi.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Kiwi<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B1</li>
+                                        <li>Canxi, Kali</li>
+                                        <li>Năng lượng: 60 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/le.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Lê<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B6, K</li>
+                                        <li>Canxi, Sắt, Magie</li>
+                                        <li>Năng lượng: 62 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/luu.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Lựu<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, K</li>
+                                        <li>Canxi, Kali, Photpho</li>
+                                        <li>Năng lượng: 70 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/man.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Mận<input type="radio"><span></span></li>
+                                        <li>Vitamin: A, B2, C</li>
+                                        <li>Sắt, Magie, Kali</li>
+                                        <li>Năng lượng: 45 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/mangcau.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Mãng cầu<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, A</li>
+                                        <li>Mangan, Magie, Kali</li>
+                                        <li>Năng lượng: 93 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/mangcut.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Măng cụt<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B1, B2, B5</li>
+                                        <li>Canxi, Sắt, Photpho</li>
+                                        <li>Năng lượng: 73 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/mit.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Mít<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, A</li>
+                                        <li>Canxi, Kali, Sắt</li>
+                                        <li>Năng lượng: 150 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/nhan.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Nhãn<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B1, PP</li>
+                                        <li>Photpho, Magie, Kali</li>
+                                        <li>Năng lượng: 48 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/nho.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Nho<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, K, B6, A</li>
+                                        <li>Canxi, Kali</li>
+                                        <li>Năng lượng: 66 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/oi.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Ổi<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B1</li>
+                                        <li>Sắt, Canxi, Kali</li>
+                                        <li>Năng lượng: 68 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/quyt.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Quýt<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B, A, E</li>
+                                        <li>Sắt, Kẽm, Mangan</li>
+                                        <li>Năng lượng: 53 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/sauring.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Sầu riêng<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B6</li>
+                                        <li>Sắt, Kali</li>
+                                        <li>Năng lượng: 357 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/tao.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Táo<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, K, E, B</li>
+                                        <li>Sắt, Canxi, Kali</li>
+                                        <li>Năng lượng: 52 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/thanh long.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Thanh long<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, A, B1</li>
+                                        <li>Canxi, Natri</li>
+                                        <li>Năng lượng: 246 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/vai.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Vải<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B, E</li>
+                                        <li>Sắt, Kẽm, Magie</li>
+                                        <li>Năng lượng: 66 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/vusua.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Vú sữa<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B1, B2</li>
+                                        <li>Sắt, Photpho</li>
+                                        <li>Năng lượng: 69 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/traicay/xoai.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Xoài<input type="radio"><span></span></li>
+                                        <li>Vitamin: C, B5, A</li>
+                                        <li>Magie, Canxi, Đồng</li>
+                                        <li>Năng lượng: 59 kcal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- vegetable -->
+                        <div class="row" id="vegetable">
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/bapcaitrang.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Bắp cải trắng<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Magie, Photpho, Kali</li>
+                                        <li>Vitamin: K, C, B6</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/bongcaixanh.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Bông cải xanh<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt</li>
+                                        <li>Vitamin: A, C</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/cachua.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cà chua<input type="radio"><span></span></li>
+                                        <li>Mangan, Đồng, Magie, Photpho, Kali</li>
+                                        <li>Vitamin: K, A, C, B6</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/caiboxoi.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cải bó xôi<input type="radio"><span></span></li>
+                                        <li>Mangan, Sắt, Magie</li>
+                                        <li>Vitamin:A, B, K, C, E</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/caithao.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cải thảo<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Natri, Canxi, Kali</li>
+                                        <li>Vitamin: A, C, B, E</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/catim.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cà tím<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Magie, Photpho, Kali, Mangan, Kẽm</li>
+                                        <li>Vitamin: C, B6</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/daubap.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Đậu bắp<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Kali, Mangan, Kẽm</li>
+                                        <li>Vitamin: C, K, A</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/dotbidao.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Đọt bí đao<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Magie, Kali, Kẽm</li>
+                                        <li>Vitamin: A</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/hanhla.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Hành lá<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Magie, Kali, Mangan, Kẽm</li>
+                                        <li>Vitamin: C, K, A</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/khoqua.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Khổ qua<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Magie, Đồng, Kali, Mangan, Kẽm</li>
+                                        <li>Vitamin: C, B, A</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/mangtay.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Măng tây<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Magie, Photpho, Đồng, Kali, Selen, Kẽm</li>
+                                        <li>Vitamin: B, A, C, K</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/muopngot.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Mướp ngọt<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Photpho</li>
+                                        <li>Vitamin: C, B</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/nam.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Nấm<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Magie, Photpho, Kali, Natri, Kẽm</li>
+                                        <li>Vitamin: B, D</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/rarot.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Cà rốt<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Magie, Kali, Natri, Photpho</li>
+                                        <li>Vitamin: C, A, K, B1</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/rau ngot.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Rau ngót<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Magie, Photpho, Kali, Mangan, Kẽm, Đồng</li>
+                                        <li>Vitamin: C, A</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/raukhoai.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Rau khoai<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Magie, Photpho, Kali, Mangan, Kẽm</li>
+                                        <li>Vitamin: C, B</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/raumuong.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Rau muống<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Magie, Photpho, Kali, Natri, Kẽm</li>
+                                        <li>Vitamin: A, C, B</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/xalach.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Xà lách<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Magie, Photpho, Kali, Kẽm</li>
+                                        <li>Vitamin: K, A</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/xuhao.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Xu hào<input type="radio"><span></span></li>
+                                        <li>Canxi, Sắt, Magie, Photpho, Kali</li>
+                                        <li>Vitamin: C, B</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2-4 m-4 c-6 container__body-content">
+                                <div class="container__body-content--item">
+                                    <img src="./assets/img/food/vitamin/ơt.jpg" alt="" class="container__body-content--img">
+                                    <ul class="container__body-content--infor">
+                                        <li>Ớt chuông<input type="radio"><span></span></li>
+                                        <li>Kali, Mangan</li>
+                                        <li>Vitamin: C, K, E, A</li>
+                                        <br>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer" id="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="l-4 m-4 c-12 footer__contacts">
+                        <h1 class="footer__contacts-title">Liên hệ</h1>
+                        <div class="footer__contacts-icon"><i class="fa-solid fa-clock"></i>Giờ làm việc:
+                        </div>
+                        <span>8h00 - 22h00</span>
+                        <div class="footer__contacts-icon"><i class="fa-solid fa-envelope"></i>Đóng góp ý kiến:
+                        </div>
+                        <span>nxq019@gmail.com</span>
+                        <div class="footer__contacts-icon"><i class="fa-solid fa-mobile-screen-button"></i>Hotline: 0356977492
+                        </div>
+                        <div class="footer__contacts-icon"><i class="fa-solid fa-location-dot"></i>Địa chỉ: 65 Thế Lữ
+                        </div>
+                        
+                    </div>
+                    <div class="l-4 m-4 c-12 footer__contacts">
+                        <div class="a">
+                            <h1 class="footer__contacts-title">KẾT NỐI </h1>
+                            <h1 class="footer__contacts-title abc">VỚI TÔI </h1>
+                        </div>
+                        <a href="https://www.facebook.com/profile.php?id=100035412519965" target="iframe_a" title="Click ảnh để liên hệ tôi">
+                            <img class="footer__contacts-img" src="./assets/img/nxq.jpg" alt="Nguyễn Xuân Quang">
+                        </a>
+                    </div>
+                    <div class="l-4 m-4 c-12 footer__contacts">
+                        <h1 class="footer__contacts-title">Hỗ trợ</h1>
+                        <a href="">Giải đáp thắc mắc</a>
+                        <a href="">Hướng dẫn sử dụng</a>
+                        <a href="">Chính sách bảo mật</a>
+                        <a href="">Điều khoản NCOF</a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!-- Modal -->
+        <div class="modal">
+            <div class="modal__overlay">
+
+            </div>
+            <div class="modal__body">
+                <!-- Register -->
+                <div class="modal-auth--register">
+                    <div class="modal__body-header">
+                        <h2 class="modal__body-name">Đăng ký</h2>
+                        <span class="modal__body-switch">Đăng nhập</span>
+                    </div>
+                    <div class="modal__body-form">
+                        <input type="text" placeholder="Email của bạn" class="modal__body-email">
+                        <input type="password" placeholder="Mật khẩu của bạn" class="modal__body-email">
+                        <input type="password" placeholder="Nhập lại mật khẩu" class="modal__body-email">
+                    </div>
+                    <div class="modal__body-aside">
+                        <p class="modal__body-link">Bằng việc đăng ký, bạn đã đồng ý với NCOF về
+                            <a href="" class="modal__body-policy">Điều khoản dịch vụ</a> &
+                            <a href="" class="modal__body-policy">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="modal__body-controls">
+                        <button class="modal__body-btn btn-return">Trở lại</button>
+                        <button class="modal__body-btn">Đăng ký</button>
+                    </div>
+                    <div class="modal__body-footer">
+                        <div class="modal__body-contact">
+                            <i class="fa-brands fa-facebook"></i>
+                            <p>Kết nối với Facebook</p>
+                        </div>
+                        <div class="modal__body-contact">
+                            <i class="fa-brands fa-google"></i>
+                            <p>Kết nối với Google</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Login -->
+                <div class="modal-auth--login">
+                    <div class="modal__body-header">
+                        <h2 class="modal__body-name">Đăng nhập</h2>
+                        <span class="modal__body-switch">Đăng ký</span>
+                    </div>
+                    <div class="modal__body-form">
+                        <input type="text" placeholder="Nhập email của bạn" class="modal__body-email">
+                        <input type="password" placeholder="Mật khẩu" class="modal__body-email">
+                    </div>
+                    <div class="modal__body-aside">
+                        <div class="modal__body-help">
+                            <a href="" class="modal__body-link">Quên mật khẩu</a>
+                            <span class="modal__body-separate"></span>
+                            <a href="" class="modal__body-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+                    <div class="modal__body-controls">
+                        <button class="modal__body-btn btn-return">Trở lại</button>
+                        <button class="modal__body-btn">Đăng nhập</button>
+                    </div>
+                    <div class="modal__body-footer">
+                        <div class="modal__body-contact">
+                            <i class="fa-brands fa-facebook"></i>
+                            <p>Sử dụng Facebook</p>
+                        </div>
+                        <div class="modal__body-contact">
+                            <i class="fa-brands fa-google"></i>
+                            <p>Sử dụng Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script src="./assets/js.js">
+
+    </script>
+</body>
+</html>
